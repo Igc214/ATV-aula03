@@ -1,0 +1,62 @@
+/*Estilo do cabeçalho*/
+header {
+    background-color: #801a1a;
+    color: #fff;
+    text-align: center;
+    padding: 1em;
+    padding-top: 1px;
+}
+
+/* tabela */
+table,
+th,
+td {
+    border: 1px solid black;
+    text-align: center;
+}
+
+.tabela {
+    padding-left: 43%;
+}
+
+h2 {
+    text-align: center;
+}
+
+/* Link */
+.link {
+    padding: 0;
+    text-align: center;
+    background-color: #666;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+    padding: 1em;
+}
+
+/* corpo da página */
+body {
+    margin: 0;
+    padding: 0;
+    text-align: justify;
+    background-color: #999;
+}
+p{
+    text-align: center;
+}
+
+/*Estilos para o rodapé */
+
+footer {
+    text-align: center;
+    padding: 0.5em;
+    background-color: #801a1a;
+    color: #fff;
+}
+
+/* Corpo */
+.corpo {
+    text-align: center;
+}
