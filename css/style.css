@@ -60,3 +60,16 @@ footer {
 .corpo {
     text-align: center;
 }
+
+/* Página de Login */
+
+.login{
+    text-align: center;
+    padding-top: 10%;
+    background-color: #fff;
+    padding-bottom: 20%;
+}
+
+form{
+    padding-bottom: 20%;
+}
