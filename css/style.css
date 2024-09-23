@@ -1,5 +1,5 @@
 /*Estilo do cabeçalho*/
-header {
+.cabecalho {
     background-color: #801a1a;
     color: #fff;
     text-align: center;
@@ -7,27 +7,10 @@ header {
     padding-top: 1px;
 }
 
-/* tabela */
-table,
-th,
-td {
-    border: 1px solid black;
-    text-align: center;
-}
-
-.tabela {
-    padding-left: 43%;
-}
-
-h2 {
-    text-align: center;
-}
-
 /* Link */
-.link {
-    padding: 0;
+nav {
+    padding: 1;
     text-align: center;
-    background-color: #666;
 }
 
 a {
@@ -36,16 +19,54 @@ a {
     padding: 1em;
 }
 
+button {
+    background: #666;
+    border-radius: 6px;
+    padding: 10px;
+    border: none;
+    font-size: 14px;
+}
+
 /* corpo da página */
 body {
     margin: 0;
     padding: 0;
     text-align: justify;
-    background-color: #999;
+    background-color: #666;
 }
-p{
+
+section {
     text-align: center;
 }
+
+
+.corpo_div {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    margin: auto;
+    width: 90%;
+    height: 90%;
+    text-align: center;
+    margin-bottom: 30px;
+    border-radius: 8px;
+    padding: 15px;
+
+}
+
+/* tabela */
+table,
+th,
+td {
+    border: 1px solid black;
+
+}
+
+.tabela {
+    text-align: center;
+    margin: 20px auto;
+
+}
+
 
 /*Estilos para o rodapé */
 
@@ -54,22 +75,4 @@ footer {
     padding: 0.5em;
     background-color: #801a1a;
     color: #fff;
-}
-
-/* Corpo */
-.corpo {
-    text-align: center;
-}
-
-/* Página de Login */
-
-.login{
-    text-align: center;
-    padding-top: 10%;
-    background-color: #fff;
-    padding-bottom: 20%;
-}
-
-form{
-    padding-bottom: 20%;
 }
