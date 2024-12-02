@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <title>Criador de nome de dinossauro</title>
+    <link rel="stylesheet" href="css/style_resto.css">
+    <link rel="icon" type="image/x-icon" href="img/jp_topoLogotipo.png">
+
+</head>
+
+<header class="cabecalho">
+    <div>
+        <figure>
+            <img src="img/jp_topoLogotipo.png">
+        </figure>
+
+    </div>
+
+    <body class="corpDINO">
+
+        <script>
+            function validarFormulario() {
+                var form = document.forms["form_cadastro"];
+                var campos = [
+                    { nome: "campo_nome1", mensagem: "Informe a primeira sílaba do seu nome." },
+                    { nome: "campo_nome2", mensagem: "Informe a última sílaba do seu nome." },
+                    { nome: "campo_nome3", mensagem: "Informe a primeira sílaba do seu sobrenome." },
+                    { nome: "campo_nome4", mensagem: "Informe a última sílaba do seu sobrenome." }
+                ];
+
+                var valores = [];
+
+                for (var i = 0; i < campos.length; i++) {
+                    var campo = form.elements[i].value.trim();
+                    if (campo === "") {
+                        alert(campos[i].mensagem);
+                        return false;
+                    }
+                    valores.push(campo);
+                }
+
+
+                var ordem = [0, 3, 2, 1];
+                var nomeDino = ordem.map(index => valores[index]).join("");
+
+                var ret = confirm("Deseja continuar?");
+                document.write(!ret);
+
+                alert("Seu nome de dinossauro é: "  + nomeDino + "sauro");
+                return true;
+            }
+
+        </script>
+</header>
+<div class="DINO">
+    <h1>CRIADOR DE NOME DE DINOSSAURO</h1>
+    <form method="get" action="?" name="form_cadastro" class="formdino">
+        <label>Informe a primeira sílaba do seu nome:</label>
+        <input type="text" name="campo_nome1">
+        <br>
+        <label>Informe a última sílaba do seu nome:</label>
+        <input type="text" name="campo_nome2">
+        <br>
+        <label>Informe a primeira sílaba do seu sobrenome:</label>
+        <input type="text" name="campo_nome3">
+        <br>
+        <label>Informe a última sílaba do seu sobrenome:</label>
+        <input type="text" name="campo_nome4">
+        <br><br>
+        <input type="button" onclick="validarFormulario();" value="Criar meu nome de dinossauro">
+    </form>
+</div>
+</body>
+<footer class="fixed-bottom">
+    <p>JURASSIC PAGE-O seu canal de informações sobre Jurassic Park</p>
+</footer>
+
+</html>
+

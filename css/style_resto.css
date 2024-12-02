@@ -35,4 +35,24 @@ footer {
     top: 25px;
     margin: 0 auto;
 }
+/*GERADOR DE NOME DINO*/
 
+.DINO{
+    color: #fff;
+    text-align: center;
+}
+.formdino{
+    text-align: center;
+}
+body{
+    padding: 0;
+    margin: 0;
+    background-color: rgb(18, 49, 35);
+}
+footer {
+    text-align: center;
+    background-color: #550000;
+    color: #ffffff;
+    padding-top: 1em !important;
+    
+}
