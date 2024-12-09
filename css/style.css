@@ -29,6 +29,19 @@
     text-align: center;
     line-height: 40px;
  }
+
+.gerarnome{
+   width: 500px;
+    height: 40px;
+    background-image: url(../img/jp_menuFundo.jpg);
+    position: relative;
+    top: -50px;
+    left: 665px;
+    border: 2px solid #ffffff;
+    border-radius: 20px 0px;
+    text-align: center;
+    line-height: 40px;
+}
  
  
  .menuSeparator{
